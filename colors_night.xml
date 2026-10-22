@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- لون مظلل داكن للوضع الليلي -->
-    <color name="bg_overlay">#77000000</color>
-</resources>
