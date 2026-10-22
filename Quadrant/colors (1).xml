@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ألوان الأرباع الأربعة للوضع الليلي الغامق -->
+    <color name="quadrant1_bg">#4E342E</color> <!-- بني داكن -->
+    <color name="quadrant2_bg">#271810</color> <!-- بني محروق شديد السواد -->
+    <color name="quadrant3_bg">#271810</color> <!-- بني محروق شديد السواد -->
+    <color name="quadrant4_bg">#4E342E</color> <!-- بني داكن -->
+
+    <!-- لون النص أبيض ناصع في الليل -->
+    <color name="quadrant_text_color">#FFFFFF</color>
+</resources>
