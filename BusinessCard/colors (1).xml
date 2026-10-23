@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- لون الخلفية للوضع الليلي -->
+    <color name="card_bg">#071330</color>
+    <color name="card_accent">#3DDC84</color>
+    <color name="card_subtext">#E0E0E0</color>
+</resources>

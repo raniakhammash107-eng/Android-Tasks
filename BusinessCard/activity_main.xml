@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/card_bg"
+    tools:context=".MainActivity">
+
+    <!-- القسم الأوسط: الصورة الشخصية والاسم والخبرة -->
+    <LinearLayout
+        android:id="@+id/llProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/llContactInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6">
+
+        <!-- صورتك الشخصية المضافة في مجلد drawable باسم rania -->
+
+        <!-- الاسم الكامل باللون الأخضر المميز -->
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="320dp"
+            android:layout_height="140dp"
+            android:contentDescription="Profile Image"
+            android:src="@drawable/rania" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Rania Basem Abu Khamash"
+            android:textColor="@color/card_accent"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- المسمى / الخبرة في التصميم -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Experience in UX/UI design"
+            android:textColor="@color/card_subtext"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- القسم السفلي: معلومات التواصل -->
+    <LinearLayout
+        android:id="@+id/llContactInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- رقم الجوال -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Phone"
+                android:src="@drawable/ic_phone"
+                app:tint="@color/card_accent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="0598339687"
+                android:textColor="@color/card_accent"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- الموقع / الحساب -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Social"
+                android:src="@drawable/ic_share"
+                app:tint="@color/card_accent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/android_dev"
+                android:textColor="@color/card_accent"
+                android:textSize="16sp"
+                tools:text="@AndroidDev" />
+        </LinearLayout>
+
+        <!-- البريد الإلكتروني -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Email"
+                android:src="@drawable/ic_email"
+                app:tint="@color/card_accent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="raniakhammash107@gmail.com"
+                android:textColor="@color/card_accent"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
